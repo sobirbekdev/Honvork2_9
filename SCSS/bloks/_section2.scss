@@ -1,0 +1,115 @@
+.secton2 {
+    display: flex;
+    padding: 0;
+    background-color: $button-bg;
+    margin-top: 170px;
+
+    nav {
+        display: flex;
+
+        img {
+            max-width: 795px;
+            // max-height: 493px;
+        }
+    }
+
+    div {
+        margin-left: -130px;
+
+        h1 {
+            padding: 138px 0 0;
+            max-width: 261px;
+            color: #FFFFFF;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 58px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        p {
+            max-width: 339px;
+            margin-top: 24px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.75;
+        }
+
+        button {
+            background-color: #4C4C4C;
+            padding: 16px 31.5px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 24px;
+        }
+
+        & :hover {
+            background-color: $button-bg-hower;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .secton2 {
+        flex-direction: column;
+        align-items: center;
+
+        nav {
+            img {
+                max-width: 450px;
+            }
+        }
+
+        div {
+            margin-left: 0;
+            padding: 20px;
+
+            h1 {
+                padding: 0;
+                margin-top: 30px;
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 481px) {
+    .secton2 {
+        flex-direction: column;
+        align-items: center;
+
+        nav {
+            img {
+                max-width: 300px;
+            }
+        }
+
+        div {
+            margin-left: 0;
+            padding: 20px;
+
+            h1 {
+                padding: 0;
+                margin-top: 30px;
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+
+

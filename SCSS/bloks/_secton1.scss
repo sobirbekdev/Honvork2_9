@@ -1,0 +1,125 @@
+.secton1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.section__box {
+    text-align: center;
+    border-radius: 8px;
+    background-color: $card-bcront;
+    max-width: 350px;
+    height: 204px;
+
+    img {
+        margin-top: -75px;
+    }
+
+    h2 {
+        padding: 36px 95px 16px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 1.28571px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    h2:hover {
+        color: $button-bg-hower;
+    }
+
+    h2:active {
+        color: $active-bg;
+    }
+
+    p {
+        padding: 0 0 30px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    p:hover {
+        color: $button-bg-hower;
+    }
+
+    p:active {
+        color: $active-bg;
+    }
+
+}
+
+.section__box:hover {
+    transition: $transition-card;
+    transform: $transform_card ;
+}
+
+@media screen and (max-width: 481px) {
+    .secton1 {
+        flex-direction: column;
+        row-gap: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__box{
+        h2{
+            padding: 36px 50px 16px;
+        }
+    } 
+}
+@media screen and (max-width: 731px) {
+    .section__box{
+        h2{
+            padding: 36px 40px 16px;
+        }
+    } 
+}
+@media screen and (max-width: 650px) {
+    .section__box{
+        h2{
+            padding: 36px 30px 16px;
+        }
+    } 
+}
+@media screen and (max-width: 598px) {
+    .secton1 {
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    .section__box{
+        h2{
+            padding: 36px 95px 16px ;       
+         }
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+    .section__box{
+        h2{
+            padding: 36px 65px 16px;
+        }
+    } 
+}
+@media screen and (max-width: 790px) {
+    .section__box{
+        h2{
+            padding: 36px 55px 16px;
+        }
+    } 
+}

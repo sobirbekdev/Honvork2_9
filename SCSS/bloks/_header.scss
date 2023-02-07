@@ -1,0 +1,210 @@
+header {
+    background-image: url(../SCSS/bloks/Bitmap.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $bacront-bg;
+}
+
+span {
+    display: none;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+
+    h1 {
+        color: #fff;
+        font-family: 'Manrope';
+    }
+
+    h1:hover {
+        color: $button-bg-hower;
+    }
+
+    h1:active {
+        color: $active-bg;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+
+        a {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 25px;
+            /* identical to box height, or 192% */
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        & :hover {
+            color: $button-bg-hower;
+        }
+
+        & :active {
+            color: $active-bg;
+        }
+
+    }
+}
+
+#header__line {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    max-width: 100%;
+}
+
+.header__box2 {
+    nav {
+        h3 {
+            margin-top: 128px;
+            max-width: 400px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+        h1 {
+            margin: 24px 0;
+            max-width: 700px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 58px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        p {
+            max-width: 349px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.75;
+        }
+
+        button {
+            margin: 40px 0 158px;
+            padding: 15px 31.5px;
+            background-color: $button-bg;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        & :hover {
+            color: $button-bg-hower;
+        }
+
+        & :active {
+            color: $active-bg;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-image: url(../SCSS/bloks/Bitmap.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $bacront-bg;
+    }
+
+    .header__box {
+        display: flex;
+        align-items: flex-start;
+
+        span {
+            display: inline-block;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        nav {
+            display: none;
+        }
+    }
+    .header__box2 {
+        nav {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 32px 0;
+            text-align: center;
+
+            h1 {
+                text-align: center;
+                font-size: 56px;
+                line-height: 58px;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .header__box {
+        display: flex;
+        align-items: center;
+        span {
+            display: inline-block;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        nav {
+            display: none;
+        }
+    }
+    .header__box2 {
+        nav {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 32px 0;
+            h3 {
+                font-size: 20px;
+            }
+            h1{
+                // max-width: 253px;
+                font-size: 17px;
+                // line-height: 40px;
+                letter-spacing: 2px;
+                
+            }
+            p {
+                text-align: center;
+                max-width: 260px;
+            }
+        }
+    }
+}
